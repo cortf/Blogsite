@@ -4,6 +4,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import Header from "../components/Header"
 
 import { rhythm } from "../utils/typography"
+import { AST_PropAccess } from "terser";
 export default ({ children }) => {
   const data = useStaticQuery(
     graphql`
@@ -49,7 +50,17 @@ export default ({ children }) => {
         About
       </Link>
       </Header>
+      <div 
+      css={css`
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+
+
+ 
+    `}
+  > 
       {children}
+    </div>
     </div>
   )
 }

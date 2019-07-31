@@ -9,6 +9,16 @@ export default ({ data }) => {
     console.log(data)
     return (
       <Layout>
+        <div css={css`
+                  justify-content: center;
+                  display:flex;
+
+                `}
+                
+                ><iframe css={css`
+                border-radius: 25px;
+                
+              `}src="https://giphy.com/embed/jxODdkVOIGFgc" width="324" height="598" frameBorder="0" allowFullScreen></iframe></div>
         <div>
           <h1
             css={css`
@@ -21,7 +31,6 @@ export default ({ data }) => {
           {data.allMarkdownRemark.edges.map(({ node }) => (
             
             <div key={node.id}>
-              <Card>
             <Link 
             to={node.fields.slug}
             css={css`
@@ -29,6 +38,7 @@ export default ({ data }) => {
             color: inherit;
             `}
             >
+              <Card>
               <h3
                 css={css`
                   margin-bottom: ${rhythm(1 / 4)};
@@ -44,8 +54,8 @@ export default ({ data }) => {
                 </span>
               </h3>
               <p>{node.excerpt}</p>
-              </Link>
               </Card>
+              </Link>
               &nbsp;
             </div>
           ))}

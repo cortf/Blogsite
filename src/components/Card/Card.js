@@ -10,7 +10,7 @@ const StyledCard = styled.div`
     &:hover {
     background-color: white; // <Thing> when hovered
     padding:10px;
-    border-style: outset;
+    border-style: dotted;
 
 
       }
