@@ -1,24 +1,23 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyledHeader = styled.div`
+const StyledFooter = styled.div`
     column-span: page;
     width: 100%;
     height: 150px;
+    border-style: dotted;
     padding: 10px;
     background-color: lavenderblush;
     border-radius: 25px;
-    /* border-style:dotted; */
-  padding: 20px;
+    
 
 
-      
 `   
 
-const Header = (props) => (
-    <StyledHeader>
+const Footer = (props) => (
+    <StyledFooter>
         {props.children}
-    </StyledHeader>
+    </StyledFooter>
 )
 
-export default Header
+export default Footer

@@ -12,13 +12,14 @@ export default ({ data }) => {
         <div css={css`
                   justify-content: center;
                   display:flex;
+                  
 
                 `}
                 
                 ><iframe css={css`
                 border-radius: 25px;
                 
-              `}src="https://giphy.com/embed/jxODdkVOIGFgc" width="324" height="598" frameBorder="0" allowFullScreen></iframe></div>
+              `}src="https://giphy.com/embed/jxODdkVOIGFgc" width="340" height="630" title="panda" frameBorder="0" allowFullScreen></iframe></div>
         <div>
           <h1
             css={css`

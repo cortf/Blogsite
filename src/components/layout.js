@@ -2,9 +2,10 @@ import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 import { rhythm } from "../utils/typography"
-import { AST_PropAccess } from "terser";
+// import { AST_PropAccess } from "terser";
 export default ({ children }) => {
   const data = useStaticQuery(
     graphql`
@@ -61,6 +62,7 @@ export default ({ children }) => {
   > 
       {children}
     </div>
+    <Footer></Footer>
     </div>
   )
 }
