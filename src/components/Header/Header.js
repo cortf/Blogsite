@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
     column-span: page;
     width: 100%;
     height: 150px;

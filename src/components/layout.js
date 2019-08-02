@@ -3,9 +3,8 @@ import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-
 import { rhythm } from "../utils/typography"
-// import { AST_PropAccess } from "terser";
+
 export default ({ children }) => {
   const data = useStaticQuery(
     graphql`
@@ -33,7 +32,7 @@ export default ({ children }) => {
         <h3
           css={css`
 
-            /* margin-bottom: ${rhythm(2)}; */
+            margin-bottom: ${rhythm(2)};
             display: inline-block;
             font-style: normal;
           `}
@@ -51,17 +50,9 @@ export default ({ children }) => {
         About
       </Link>
       </Header>
-      <div 
-      css={css`
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-
-
- 
-    `}
-  > 
+      <main>
       {children}
-    </div>
+      </main>
     <Footer></Footer>
     </div>
   )
