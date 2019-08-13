@@ -7,10 +7,11 @@ const StyledButton = styled.div`
     button{
         height:100%;
         width:100%;
+        border-radius:25px;
     }
-    border-radius: 25px;
+    border-radius: 2px;
     &:hover {
-    background-color: white; // <Thing> when hovered
+    /* background-color: black; // <Thing> when hovered */
 
 
       }
